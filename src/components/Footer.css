@@ -1,0 +1,71 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.merriam-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.footer-info {
+  margin-top: 10px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.footer-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-media ul {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.footer-media ul li {
+  padding: 0 9px;
+}
+
+.footer-media ul li a {
+  color: white;
+  transition: all 0.5s;
+}
+
+.footer-media ul li .social-twitter:hover {
+  color: #38a1f3;
+}
+
+.footer-media ul li .social-github:hover {
+  color: #bd2c00;
+}
+
+.footer-media ul li a i {
+  font-size: 150%;
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info-title {
+  font-size: 70%;
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}

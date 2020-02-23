@@ -1,0 +1,26 @@
+/* Selected Term Styling */
+
+.selected-term-container {
+  color: white;
+}
+
+.selected-term-container h1 {
+  font-size: 450%;
+  font-weight: 300;
+}
+
+.def-container h2 {
+  font-style: italic;
+  font-size: 130%;
+  margin-bottom: 2px;
+}
+
+.def-container p {
+  font-size: 125%;
+  margin-bottom: 10px;
+  /* line-height: 160%; */
+}
+
+.indiv-def {
+  line-height: 140%;
+}

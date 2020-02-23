@@ -1,0 +1,82 @@
+/* Listed Term styling */
+
+.listed-term-container {
+  opacity: 0.4;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-bottom: 1px solid rgba(212, 212, 212, 0.452);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+  overflow: none;
+}
+
+.listed-term-container:hover {
+  opacity: 0.725;
+}
+
+.listed-term-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listed-term-content {
+  display: none;
+  margin: 0 10px;
+  margin-top: 10px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.listed-term-content.visible-element {
+  display: none;
+}
+
+.listed-term-container h1 {
+  font-size: 300%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listed-term-container i {
+  font-size: 150%;
+}
+
+.listed-term-container.selected {
+  opacity: 1;
+}
+
+.term-and-arrow {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 2;
+}
+
+.select-arrow {
+  opacity: 0;
+  padding-right: 20px;
+}
+
+.selected .select-arrow {
+  opacity: 1;
+}
+
+.del-term-btn {
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.del-term-btn:hover {
+  opacity: 1;
+  color: var(--yellow);
+}

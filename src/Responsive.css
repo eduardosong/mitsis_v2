@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1180px) {
+  /* Listed Term  */
+  .listed-term-container h1 {
+    font-size: 200%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  /* Title */
+  .min-view .rest-of-title {
+    opacity: 0;
+  }
+
+  .min-view .section-title h4 {
+    display: none;
+  }
+
+  /* Search Bar */
+  .section-searchbar.min-view {
+    max-width: 550px;
+    left: 60px;
+  }
+
+  /* Listed Term  */
+  .listed-term-container h1 {
+    font-size: 150%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .listed-term-container i {
+    font-size: 100%;
+  }
+
+  /* Selected Term */
+  .selected-term-container h1 {
+    font-size: 250%;
+    font-weight: 300;
+  }
+
+  .def-container p {
+    font-size: 100%;
+    margin-bottom: 10px;
+    /* line-height: 160%; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Section: Title */
+  .section-title {
+    flex-direction: column;
+    top: 30%;
+  }
+
+  .section-title h4 {
+    font-size: 80%;
+    max-width: 275px;
+  }
+
+  .section-title.min-view h4 {
+    display: none;
+  }
+
+  /* Search Bar */
+  .section-searchbar.min-view {
+    max-width: 425px;
+  }
+
+  /* Selected Term */
+  .selected-term-container h1 {
+    font-size: 175%;
+    font-weight: 300;
+  }
+
+  .def-container p {
+    font-size: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Listed Term  */
+  .listed-term-container h1 {
+    font-size: 125%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Section: Term Definition */
+  .section-term-def {
+    display: none;
+  }
+
+  /* Section: Options */
+  .section-options {
+    right: initial;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80px;
+  }
+
+  /* Section: Term List */
+  .section-term-list {
+    right: 0%;
+    width: 100%;
+    height: 77vh;
+  }
+
+  /* Listed Term */
+  .select-arrow {
+    transform: rotate(180deg);
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .listed-term-content.visible-element {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Search Bar */
+  .section-searchbar.min-view {
+    max-width: 300px;
+  }
+
+  /* Section: Options */
+  .options-btn {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  /* Search Bar */
+  .section-searchbar.min-view {
+    max-width: 250px;
+  }
+
+  .section-title h1 {
+    font-size: 350%;
+  }
+}

@@ -1,0 +1,309 @@
+/* General Styling */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(182, 182, 182);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(104, 104, 104, 0.534);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(75, 75, 75);
+}
+
+.page-content {
+  height: 100vh;
+}
+
+.section {
+  color: white;
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+a,
+a:visited,
+a:hover,
+/* a:focus, */
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.top-border {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 65px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+  transition: all 0.5s;
+}
+
+.top-border.min-view {
+  transition: all 3s;
+}
+
+.top-border.min-view {
+  opacity: 1;
+}
+
+/* Clear Terms */
+.clear-terms-btn-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cancel-btn {
+  padding: 5px 20px;
+  border: 1px solid black;
+  transition: background-color 0.5s;
+  font-size: 100%;
+}
+.cancel-btn:hover,
+.cancel-btn:active {
+  background-color: rgb(223, 223, 223);
+}
+
+.del-btn {
+  padding: 5px 20px;
+  border: 1px solid red;
+  font-size: 100%;
+  background-color: rgb(255, 108, 108);
+  transition: background-color 0.5s;
+}
+
+.del-btn:hover {
+  background-color: rgb(253, 60, 60);
+}
+
+.del-btn:active {
+  background-color: rgb(255, 133, 133);
+}
+
+/* Section: Title */
+
+.section-title {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -35%);
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.section-title.min-view {
+  left: 10px;
+  top: 5px;
+  transform: translate(0%, 0%);
+}
+
+.section-title h1 {
+  font-size: 500%;
+  transition: all 0.5s;
+}
+
+.section-title.min-view h1 {
+  font-size: 300%;
+}
+
+.section-title h4 {
+  width: 350px;
+  line-height: 160%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.section-title.min-view h4 {
+  opacity: 0;
+  /* display: none; */
+}
+
+/* Section: Searchbar */
+
+.section-searchbar {
+  position: absolute;
+  left: 50%;
+  max-width: 550px;
+  width: 98%;
+  top: 47%;
+  transition: all 0.3s;
+
+  transform: translate(-50%, -47%);
+  z-index: 10;
+}
+
+.section-searchbar.min-view {
+  transition: all 0.8s;
+
+  left: 170px;
+  top: 13px;
+  transform: translate(0, 0);
+}
+
+.section-searchbar form {
+  display: flex;
+}
+
+.section-searchbar input {
+  font-size: 150%;
+  padding: 5px 15px;
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  border: none;
+}
+
+.section-searchbar button {
+  border-radius: 0 20px 20px 0;
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--yellow);
+}
+
+.section-searchbar i {
+  font-size: 200%;
+}
+
+/* Section: Term Definition */
+
+.section-term-def {
+  opacity: 0;
+  position: absolute;
+  top: 70px;
+  left: 2%;
+  width: 63.75%;
+  transition: all 0.25s;
+  height: 80%;
+  padding: 10px;
+  z-index: 5;
+  overflow-y: auto;
+}
+
+.section-term-def.min-view {
+  opacity: 1;
+  transition: all 2.5s;
+}
+
+/* Section: Options */
+
+.section-options {
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  right: 12%;
+  /* transform: translate(50%); */
+  padding-bottom: 15px;
+  transition: all 0.25s;
+  z-index: 5;
+}
+
+.section-options.min-view {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.section-options ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.section-options ul li {
+  margin: 0 10px;
+}
+
+.options-btn {
+  border-bottom: 1px solid rgba(212, 212, 212, 0.253);
+  color: rgba(255, 255, 255, 0.644);
+  font-size: 145%;
+  transition: all 0.5s;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.options-btn:hover {
+  color: white;
+}
+
+/* Section: Term List */
+
+.section-term-list {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 120px;
+  right: 2%;
+  width: 32%;
+  height: 77vh;
+  overflow-y: auto;
+
+  border-left: 1px solid rgba(212, 212, 212, 0.253);
+  padding-left: 10px;
+  z-index: 5;
+  transition: all 0.25s;
+}
+
+.section-term-list.min-view {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+/* Section: Error */
+.alt-term {
+  background-color: transparent;
+  border: none;
+  color: rgb(108, 172, 255);
+  font-size: 110%;
+}
+
+.err-body {
+  font-size: 125%;
+  padding: 10px;
+  color: white;
+}
+
+.err-close-btn-cont {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.err-close-btn {
+  padding: 5px 10px;
+  font-size: 105%;
+  background-color: white;
+  transition: background-color 0.5s;
+}
+
+.err-close-btn:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+.no-term-err {
+  background: rgb(255, 75, 75) !important;
+}
+
+.alt-term-err {
+  background: rgb(230, 208, 10) !important;
+}
